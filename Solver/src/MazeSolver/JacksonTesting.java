@@ -4,6 +4,7 @@ public class JacksonTesting {
 	public static void main(String[] args) {
 		Maze testMaze;
 		
-		testMaze = Maze.CreateMazeFromFile("");
+		testMaze = Maze.CreateMazeFromFile("C:\\maze.txt");
+		testMaze.printMaze();
 	}
 }
