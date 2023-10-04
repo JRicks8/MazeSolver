@@ -131,12 +131,13 @@ public class Maze {
 		Cell compareCell = new Cell();
 		boolean isPath = false;
 		for(int i = 0; i < height; i++) {
-			for(int j = 0; j < width; i++) {
+			for(int j = 0; j < width; j++) {
 				/*compare the current cell's coordinates to those found in the pathList. If a match is found, delete the
 				matching cell from the pathList to reduce length of future searches. */
 				compareCell.x = j;
 				compareCell.y = i;
 				
+				isPath = false;
 				for(Cell cell : _pathList) {
 					if(CompareCoordinates(cell, compareCell)) {
 						_pathList.remove(cell);

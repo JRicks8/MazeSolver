@@ -6,5 +6,5 @@ public class JacksonTesting {
 		
 		testMaze = Maze.CreateMazeFromFile("C:\\maze.txt");
 		testMaze.printMaze();
-	}
+		testMaze.printMazePath(Pathfind.findPath(testMaze));	}
 }
