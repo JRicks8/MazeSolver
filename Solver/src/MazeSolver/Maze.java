@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Maze {
-	public Coordinates startPosition;
-	public Coordinates endPosition;
+	public Cell startPosition;
+	public Cell endPosition;
 	public int width;
 	public int height;
 	//stores every value in the maze in a list as a 0 (pass-able) or 1 (blocked)
@@ -15,8 +15,8 @@ public class Maze {
 	
 	//constructor with no parameters, all numbers start being 0.
 	public Maze() {
-		this.startPosition = new Coordinates();
-		this.endPosition = new Coordinates();
+		this.startPosition = new Cell();
+		this.endPosition = new Cell();
 		this.width = 0;
 		this.height = 0;
 		this.cells = new ArrayList<Integer>();
