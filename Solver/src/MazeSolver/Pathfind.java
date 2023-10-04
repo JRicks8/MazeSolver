@@ -66,7 +66,7 @@ public class Pathfind {
 		float gNew, hNew, fNew;
 		int isPassable;
 		
-		isPassable = maze.getCell(x + dx, y + dy);
+		isPassable = maze.GetCell(x + dx, y + dy);
 		if (isPassable == 1) {
 			
 			if (maze.endPosition.x == cells[x + dx][y + dy].x 
